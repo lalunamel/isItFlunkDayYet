@@ -18,7 +18,9 @@ var falseResponses = [
 	"Nope, Flunk Day does not exist",
 	"Nope, it's just Pass Day today",
 	"Nope, turn down your speakers",
-	"Nope, stop dancing"
+	"Nope, stop dancing",
+	"If you have to ask, it's not Flunk Day",
+	"Nope, the trucks haven't arrived"
 ];
 
 function getRandomInt(min, max) {
