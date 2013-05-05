@@ -3,13 +3,13 @@
   "scripts": {
     "start": "node server.js"
   },
-  "version": "0.0.0",
+  "version": "0.0.0-3",
   "engines": {
     "node": "0.8.x"
   },
   "subdomain": "lalunamel-isitflunkdayyet",
   "domains": [
-  	"www.isitflunkdayyet.com",
-  	"isitflunkdayyet.com"
+    "www.isitflunkdayyet.com",
+    "isitflunkdayyet.com"
   ]
 }

@@ -1,3 +1,5 @@
+/* TODO: Add POST to flip isFlunkDayVariable */
+
 var http = require("http");
 
 var isFlunkDay = false;
@@ -20,7 +22,9 @@ var falseResponses = [
 	"Nope, turn down your speakers",
 	"Nope, stop dancing",
 	"If you have to ask, it's not Flunk Day",
-	"Nope, the trucks haven't arrived"
+	"Nope, the trucks haven't arrived",
+	"3...<br>2...<br>1...<br>Nope, it's still not Flunk Day",
+	"Nope, go back to the WikiFire"
 ];
 
 function getRandomInt(min, max) {
@@ -30,7 +34,7 @@ function getRandomInt(min, max) {
 function writeDocument(response) {
 	response.write("<!doctype html><html><body>");
 		response.write("<p style='font-family: \"Helvetica\", \"Arial\", sans-serif; font-size: 5em; text-transform: uppercase; font-weight: bold; margin: 0; padding: 0; color: rgb(25,25,25);'>");
-			response.write(isFlunkDay ? "Yep" : falseResponses[getRandomInt(0, falseResponses.length-1)]);
+			response.write(isFlunkDay ? "Yep, go party" : falseResponses[getRandomInt(0, falseResponses.length-1)]);
 		response.write("</p>");
 	response.write("</body></html>");
 }
